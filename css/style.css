@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+
+/* Utilities */
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/******* MAIN *******/
+
+main {
+    height: calc(100% - 100px);
+    display: flex;
+}
+
+.main-header {
+    flex-basis: 300px;
+    background-color: gray;
+}
+
+.main-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: greenyellow;
+}
+
+.top-main-body {
+    flex-basis: 200px;
+    background-color: dodgerblue;
+}
+
+footer {
+    height: 100px;
+    background-color: red;
+}
