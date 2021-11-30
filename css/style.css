@@ -21,20 +21,35 @@ body {
     width: 100vw;
 }
 
+.icon-medium {
+    font-size: 25px;
+}
+
+.icon {
+    color: white;
+    margin: 5px 0;
+}
+
 
 /******* MAIN *******/
 
 main {
     height: calc(100% - 100px);
     display: flex;
+    flex-direction: row;
 }
 
 
 /* Main-Header */
 
 .main-header {
-    flex-basis: 100px;
-    background-color: gray;
+    flex-basis: 50px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    padding: 5px 0;
 }
 
 
