@@ -29,10 +29,16 @@ main {
     display: flex;
 }
 
+
+/* Main-Header */
+
 .main-header {
-    flex-basis: 300px;
+    flex-basis: 100px;
     background-color: gray;
 }
+
+
+/* Main-Body */
 
 .main-body {
     display: flex;
@@ -42,11 +48,24 @@ main {
 }
 
 .top-main-body {
-    flex-basis: 200px;
+    flex-basis: 150px;
     background-color: dodgerblue;
 }
+
+.down-main-body {
+    flex-grow: 1;
+    background-color: brown;
+}
+
+
+/****** FOOTER******/
 
 footer {
     height: 100px;
     background-color: red;
 }
+
+
+/****** CSS MEDIA QUERY ******/
+
+@media screen and (min-width: 575px) {}
