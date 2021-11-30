@@ -30,6 +30,10 @@ body {
     margin: 5px 0;
 }
 
+img {
+    height: 200px;
+}
+
 
 /******* MAIN *******/
 
@@ -87,6 +91,19 @@ main {
 .down-main-body {
     flex-grow: 1;
     background-color: brown;
+}
+
+.options {
+    margin-top: 10px;
+    display: flex;
+    height: 70px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.option {
+    font-size: 14px;
+    margin-right: 30px;
 }
 
 
