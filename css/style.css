@@ -34,7 +34,7 @@ body {
 /******* MAIN *******/
 
 main {
-    height: calc(100% - 100px);
+    height: calc(100% - 80px);
     display: flex;
     flex-direction: row;
 }
@@ -59,13 +59,30 @@ main {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    background-color: greenyellow;
 }
 
+
+/* Top Main Body */
+
 .top-main-body {
-    flex-basis: 150px;
-    background-color: dodgerblue;
+    flex-basis: 80px;
+    position: relative;
+    background-color: #000000;
 }
+
+.button-upgrade {
+    color: white;
+    border: 1px solid white;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+/* Down Main Body */
 
 .down-main-body {
     flex-grow: 1;
@@ -76,7 +93,7 @@ main {
 /****** FOOTER******/
 
 footer {
-    height: 100px;
+    height: 80px;
     background-color: red;
 }
 
