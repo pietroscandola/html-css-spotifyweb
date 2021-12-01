@@ -35,10 +35,6 @@ body {
     margin: 5px 0;
 }
 
-img {
-    height: 200px;
-}
-
 h3 {
     margin: 20px 10px;
     color: white;
@@ -62,7 +58,7 @@ main {
 /* Main-Header */
 
 .sidebar {
-    flex-basis: 50px;
+    flex-basis: 300px;
     flex-shrink: 0;
     background-color: #000000;
     display: flex;
@@ -140,6 +136,10 @@ main {
     text-align: center;
     margin: 10px;
     width: 200px;
+}
+
+.album img {
+    height: 200px;
 }
 
 .title {
@@ -248,4 +248,9 @@ footer>* {
 
 /****** CSS MEDIA QUERY ******/
 
-@media screen and (min-width: 575px) {}
+@media screen and (min-width: 575px) {
+    .sidebar {
+        flex-basis: 50px;
+        text-align: center;
+    }
+}
