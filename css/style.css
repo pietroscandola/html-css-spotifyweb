@@ -84,8 +84,7 @@ main {
 .top-main-body {
     display: flex;
     justify-content: flex-end;
-    flex-basis: 100px;
-    flex-shrink: 0;
+    height: 70px;
     background-color: rgba(0, 0, 0, 0.5);
     align-items: flex-start;
     position: fixed;
@@ -98,10 +97,10 @@ main {
     display: block;
     color: white;
     border: 1px solid white;
-    padding: 15px 40px;
+    padding: 10px 30px;
     border-radius: 30px;
     font-size: 12px;
-    margin: 20px;
+    margin: 10px 20px;
 }
 
 
@@ -156,6 +155,49 @@ main {
 footer {
     height: 80px;
     background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.songs {
+    display: flex;
+    margin: 0 10px;
+    align-items: center;
+}
+
+#song {
+    height: 60px;
+}
+
+.description {
+    margin-left: 10px;
+}
+
+.song-name {
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+}
+
+.author {
+    font-size: 12px;
+    color: darkgrey;
+    font-weight: 600;
+}
+
+.progress-bar {
+    background-color: gray;
+    height: 5px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.value {
+    background-color: white;
+    height: 5px;
+    width: 30%;
+    border-radius: 10px;
 }
 
 
