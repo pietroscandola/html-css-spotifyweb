@@ -20,16 +20,31 @@
         <main>
             <!-- Main-Header -->
             <div class="sidebar">
+                <div><img id="spotify" src="img/logo.svg" alt="Spotify"></div>
 
                 <div class="top-sidebar icon-medium">
-                    <div class="icon"><img src="img/logo.svg" alt="Spotify"></div>
-                    <div class="icon"><img src="img/home.svg" alt="home"></div>
-                    <div class="icon"><img src="img/search.svg" alt="search"></div>
-                    <div class="icon"><img src="img/libreria.svg" alt="librery"></div>
+                    <div><img class="image" src="img/home.svg" alt="home"><span class="words color-white">Home</span></div>
+                    <div><img class="image" src="img/search.svg" alt="search"><span class="words color-gray">Cerca</span></div>
+                    <div><img class="image" src="img/libreria.svg" alt="librery"><span class="words color-gray">La tua Libreria</span></div>
+                    <div class="playlist">
+                        <h5>PLAYLIST</h5>
+                        <div class="plus"><i class="far fa-plus-square mg-right20"></i> <span class="words">  Crea Playlist</span></div>
+                        <ul>
+                            <li class="words color-gray">Nome Playlist</li>
+                            <li class="words color-gray">Nome Playlist</li>
+                            <li class="words color-gray">Nome Playlist</li>
+                            <li class="words color-gray">Nome Playlist</li>
+                            <li class="words color-gray">Nome Playlist</li>
+                            <li class="words color-gray">Nome Playlist</li>
+                            <li class="words color-gray">Nome Playlist</li>
+                        </ul>
+                    </div>
                 </div>
+
+
                 <div class="down-sidebar">
-                    <div class="icon"><i class="far fa-arrow-alt-circle-down"></i></div>
-                    <div class="icon icon-medium"><i class="fas fa-user-circle"></i></div>
+                    <div class="icon"><i class="far fa-arrow-alt-circle-down"></i> <span class="words color-gray"> Installa app</span></div>
+                    <div class="icon icon-medium"><i class="fas fa-user-circle"></i> <span class="color-white"> John Doe </span></div>
                 </div>
             </div>
 
@@ -51,10 +66,11 @@
                         <div class="option">NUOVE USCITE</div>
                         <div class="option">SCOPRI</div>
                     </div>
+                    <div class="heading">
+                        <h3 class="color-white">Recently played</h3>
+                    </div>
 
-                    <h3>Recently played</h3>
-
-                    <div class="playlist">
+                    <div class="played">
                         <div class="album">
                             <img src="img/metal_lifting.jpg" alt="Heavy Metal">
                             <h4 class="title">Heavy Metal</h4>
@@ -89,6 +105,42 @@
                             <img src="img/sinister.jpeg" alt="Sinister">
                             <h4 class="title">A cure for wellness</h4>
                             <span class="subtitle">Subtitle</span>
+                        </div>
+                    </div>
+
+                    <div class="heading">
+                        <h3 class="color-white">Creato per John Doe</h3>
+                        <span class="color-gray">Più ascolti, più accurati saranno i suggerimenti </span>
+                    </div>
+
+
+                    <div class="played">
+                        <div class="album">
+                            <img src="img/player_left.jpg" alt="Heavy Metal">
+                            <h4 class="title">Realease Radar</h4>
+
+                        </div>
+
+                        <div class="album">
+                            <img src="img/mixdaily.jpeg" alt="Stranger Things">
+                            <h4 class="title">Daily Mix 1</h4>
+
+                        </div>
+                    </div>
+                    <div class="heading">
+                        <h3 class="color-white">Artisti più popolari</h3>
+                        <span class="color-gray">Più ascolti, più accurati saranno i suggerimenti </span>
+                    </div>
+
+                    <div class="played">
+                        <div class="album">
+                            <img class="border-radius" src="img/youg.jpeg" alt="Heavy Metal">
+                            <h4 class="title">Lana del Ray</h4>
+                        </div>
+
+                        <div class="album">
+                            <img class="border-radius" src="img/einaudi.jpeg" alt="Stranger Things">
+                            <h4 class="title">Ludovico Einaudi</h4>
                         </div>
                     </div>
                 </div>

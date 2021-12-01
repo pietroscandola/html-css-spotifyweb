@@ -35,14 +35,21 @@ body {
     margin: 5px 0;
 }
 
-h3 {
-    margin: 20px 10px;
-    color: white;
-    font-weight: 900;
-}
-
 .mg-right20 {
     margin-right: 10px;
+}
+
+.color-gray {
+    color: gray;
+    font-weight: 600;
+}
+
+.color-white {
+    color: white;
+}
+
+.border-radius {
+    border-radius: 50%;
 }
 
 
@@ -58,14 +65,56 @@ main {
 /* Main-Header */
 
 .sidebar {
-    flex-basis: 300px;
+    flex-basis: 50px;
     flex-shrink: 0;
     background-color: #000000;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    /* text-align: center; */
     justify-content: space-between;
-    padding: 5px 0;
+    padding: 5px 10px;
+}
+
+#spotify {
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.image {
+    margin: 0 10px;
+}
+
+.top-sidebar img {
+    height: 30px;
+}
+
+.playlist h5 {
+    padding: 15px 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.top-sidebar .words {
+    font-size: 14px;
+}
+
+.fa-plus-square {
+    font-size: 40px;
+}
+
+.playlist ul li {
+    padding: 10px 0;
+}
+
+.playlist ul {
+    margin-top: 20px;
+}
+
+.plus {
+    display: flex;
+    align-items: center;
+    color: gray;
 }
 
 
@@ -127,7 +176,7 @@ main {
     font-weight: 700;
 }
 
-.playlist {
+.played {
     display: flex;
     flex-wrap: wrap;
 }
@@ -151,6 +200,11 @@ main {
 .subtitle {
     font-size: 13px;
     color: #616369;
+}
+
+.heading {
+    margin: 20px 10px;
+    font-weight: 900;
 }
 
 
@@ -248,9 +302,12 @@ footer>* {
 
 /****** CSS MEDIA QUERY ******/
 
-@media screen and (min-width: 575px) {
+@media screen and (min-width: 576px) {
     .sidebar {
-        flex-basis: 50px;
-        text-align: center;
+        flex-basis: 200px;
+        text-align: none;
+    }
+    .top-main-body {
+        width: calc(100% - 200px);
     }
 }
