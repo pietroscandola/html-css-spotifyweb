@@ -45,6 +45,10 @@ h3 {
     font-weight: 900;
 }
 
+.mg-right20 {
+    margin-right: 10px;
+}
+
 
 /******* MAIN *******/
 
@@ -154,9 +158,8 @@ main {
 
 footer {
     height: 80px;
-    background-color: red;
+    background-color: #282828;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -186,11 +189,35 @@ footer {
     font-weight: 600;
 }
 
+.action {
+    color: gray;
+}
+
+.player {
+    flex-grow: 1;
+}
+
+.buttons {
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.player .bar {
+    display: flex;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
 .progress-bar {
     background-color: gray;
     height: 5px;
-    width: 100%;
     border-radius: 10px;
+    flex-grow: 1;
+    align-self: center;
+    margin: 0 10px;
 }
 
 .value {
@@ -198,6 +225,24 @@ footer {
     height: 5px;
     width: 30%;
     border-radius: 10px;
+}
+
+.time {
+    font-size: 12px;
+    color: white;
+}
+
+.volume {
+    width: 100px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+footer>* {
+    margin: 0 10px;
 }
 
 
