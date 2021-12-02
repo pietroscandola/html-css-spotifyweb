@@ -37,6 +37,11 @@ body {
     margin: 5px 0;
 }
 
+.icon:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
 .mg-right20 {
     margin-right: 10px;
 }
@@ -48,6 +53,11 @@ body {
 
 .color-white {
     color: white;
+}
+
+.words:hover {
+    color: white;
+    cursor: pointer;
 }
 
 .border-radius {
@@ -129,6 +139,7 @@ main {
 
 .top-sidebar .words {
     font-size: 14px;
+    transition: color 1s;
 }
 
 .fa-plus-square {
@@ -188,6 +199,7 @@ main {
     border-radius: 30px;
     font-size: 12px;
     margin: 10px 20px;
+    transition: transform 1s;
 }
 
 .button-upgrade:hover {
