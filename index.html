@@ -20,16 +20,21 @@
         <main>
             <!-- Sidebar -->
             <div class="sidebar">
-                <div><img id="spotify" src="img/logo.svg" alt="Spotify"></div>
+                <figure>
+                    <img id="logo-small" src="img/logo-small.svg" alt="Spotify">
+                    <img id="logo" src="img/logo.svg" alt="Spotify">
+                </figure>
 
                 <div class="top-sidebar icon-medium">
-                    <div class="sidebar-item"><img class="image" src="img/home.svg" alt="home"><span class="words color-white">Home</span></div>
-                    <div class="sidebar-item"><img class="image" src="img/search.svg" alt="search"><span class="words color-gray">Cerca</span></div>
-                    <div class="sidebar-item"><img class="image" src="img/libreria.svg" alt="librery"><span class="words color-gray">La tua Libreria</span></div>
-                    <div class="playlist">
+                    <div class="sidebar-item"><img class="image" src="img/home.svg" alt="home"><span class="words color-white displaysm">Home</span></div>
+                    <div class="sidebar-item"><img class="image" src="img/search.svg" alt="search"><span class="words color-gray displaysm">Cerca</span></div>
+                    <div class="sidebar-item"><img class="image" src="img/libreria.svg" alt="librery"><span class="words color-gray displaysm">La tua Libreria</span></div>
+
+                    <div class="playlist displaysm">
                         <h5>PLAYLIST</h5>
-                        <div class="plus"><i class="far fa-plus-square mg-right20"></i> <span class="words"> Crea
-                                Playlist</span></div>
+                        <div class="plus">
+                            <i class="far fa-plus-square mg-right20"></i>
+                            <span class="words"> Crea Playlist</span></div>
                         <ul>
                             <li class="words color-gray">Nome Playlist</li>
                             <li class="words color-gray">Nome Playlist</li>
@@ -44,11 +49,14 @@
 
 
                 <div class="down-sidebar">
-                    <div class="icon"><i class="far fa-arrow-alt-circle-down"></i> <span class="words color-gray">
-                            Installa app</span></div>
-                    <hr />
-                    <div class="icon icon-medium"><i class="fas fa-user-circle"></i> <span class="color-white"> John Doe
-                        </span></div>
+                    <div class="icon">
+                        <i class="far fa-arrow-alt-circle-down"></i>
+                        <span class="words color-gray displaysm">Installa app</span>
+                    </div>
+                    <hr class="displaysm-none">
+                    <div class="icon icon-medium">
+                        <i class="fas fa-user-circle"></i><span class="color-white displaysm"> John Doe</span>
+                    </div>
                 </div>
             </div>
 
@@ -63,7 +71,7 @@
                 <!-- Down Main Body -->
                 <div class="down-main-body">
                     <div class="navbar">
-                        <div class="option">IN EVIDENZA</div>
+                        <div class="option"><span class="active">IN EVIDENZA</span> </div>
                         <div class="option">PODCAST</div>
                         <div class="option">CLASSIFICHE</div>
                         <div class="option">GENERI E MOOD</div>
