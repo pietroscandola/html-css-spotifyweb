@@ -18,12 +18,14 @@ body {
 /* Utilities */
 
 .container {
-    max-width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .wrapper {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .icon-medium {
@@ -62,17 +64,32 @@ main {
 }
 
 
-/* Main-Header */
+/* Sidebar */
+
+#spotify {
+    width: 30%;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+}
 
 .sidebar {
-    flex-basis: 50px;
+    flex-basis: 250px;
+    z-index: 1;
     flex-shrink: 0;
     background-color: #000000;
     display: flex;
     flex-direction: column;
-    /* text-align: center; */
-    justify-content: space-between;
+    text-align: center;
     padding: 5px 10px;
+}
+
+.sidebar .sidebar-item {
+    display: flex;
+    align-items: center;
+    height: 40px;
 }
 
 #spotify {
@@ -84,6 +101,10 @@ main {
     margin: 0 10px;
 }
 
+.top-sidebar {
+    flex-grow: 1;
+}
+
 .top-sidebar img {
     height: 30px;
 }
@@ -93,6 +114,7 @@ main {
     margin-top: 20px;
     margin-bottom: 10px;
     color: white;
+    text-align: left;
 }
 
 .top-sidebar .words {
@@ -105,16 +127,22 @@ main {
 
 .playlist ul li {
     padding: 10px 0;
+    text-align: left;
 }
 
 .playlist ul {
     margin-top: 20px;
+    list-style: none;
 }
 
 .plus {
     display: flex;
     align-items: center;
     color: gray;
+}
+
+.down-sidebar {
+    text-align: left;
 }
 
 
@@ -139,7 +167,7 @@ main {
     position: fixed;
     top: 0;
     right: 0;
-    width: calc(100% - 50px);
+    width: calc(100% - 250px);
 }
 
 .button-upgrade {
@@ -314,7 +342,7 @@ footer>* {
 
 @media screen and (min-width: 768px) {
     .album {
-        width: calc(25% - 20px);
+        width: calc(100% / 4 - 20px);
         margin: 0 10px;
     }
 }
